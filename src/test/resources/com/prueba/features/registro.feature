@@ -26,14 +26,15 @@ Característica: Validar endpoint de registros
       | password  | <password>  |
       | firstName | <firstName> |
       | lastName  | <lastName>  |
-    Entonces se valida que la respuesta contenga el "<error>"
+    Entonces se valida que la respuesta contenga el "<error>" y el <codigo>
 
     Ejemplos:
-      | nombreEscenario                    | email                  | password   | firstName | lastName | error                                                                           |
-      | correo con dominio diferente       | prueba@gmail.com       | Prueba123* | prueba1   | prueba1  | The email must be @wolox.com.ar                                                 |
-      | correo sin direccion sin direccion | @wolox.com.ar          | Prueba123  | prueba2   | prueba2  | Invalid email                                                                   |
-      | coreo condominio incompleto        | prueba@wolox.com       | Prueba123  | prueba3   | prueba3  | The email must be @wolox.com.ar                                                 |
-      | clave menor a 8 caracteres         | prueba001@wolox.com.ar | Prueba2    | prueba4   | prueba4  | Password must be at least 8 characters                                          |
-      | usuario ya existe                  | prueba@wolox.com.ar    | Prueba2q   | prueba5   | prueba5  | Unable to create new user. The resource you are trying to create already exists |
+      | nombreEscenario                    | email                  | password   | firstName | lastName | error                                                                           | codigo |
+      | correo con dominio diferente       | prueba@gmail.com       | Prueba123* | prueba1   | prueba1  | The email must be @wolox.com.ar                                                 | 422    |
+      | correo sin direccion sin direccion | @wolox.com.ar          | Prueba123  | prueba2   | prueba2  | Invalid email                                                                   | 422    |
+      | coreo condominio incompleto        | prueba@wolox.com       | Prueba123  | prueba3   | prueba3  | The email must be @wolox.com.ar                                                 | 422    |
+      | clave menor a 8 caracteres         | prueba001@wolox.com.ar | Prueba2    | prueba4   | prueba4  | Password must be at least 8 characters                                          | 422    |
+      | usuario ya existe                  | prueba@wolox.com.ar    | Prueba2q   | prueba5   | prueba5  | Unable to create new user. The resource you are trying to create already exists | 422    |
+      | datos requeridos                   |                        |            |           |          | missing required fields: firstName, lastName, email, password                                    | 400    |
 
 

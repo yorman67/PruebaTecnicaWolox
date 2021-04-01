@@ -31,7 +31,7 @@ public class Comunes {
         return mapInfoRegister;
     }
 
-    public String convertirAJson(Map<String, Object> dataTableBody) {
+    public String convertirAJson(Object dataTableBody) {
         Gson gson = new Gson();
         return gson.toJson(dataTableBody);
     }

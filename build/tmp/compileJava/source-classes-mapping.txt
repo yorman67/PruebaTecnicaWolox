@@ -1,4 +1,4 @@
-com/prueba/util/Comunes.java
- com.prueba.util.Comunes
 com/prueba/task/Registra.java
  com.prueba.task.Registra
+com/prueba/util/Comunes.java
+ com.prueba.util.Comunes

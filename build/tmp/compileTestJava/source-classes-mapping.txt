@@ -1,6 +1,6 @@
-com/prueba/stepdefinitions/RegistroStepDefinition.java
- com.prueba.stepdefinitions.RegistroStepDefinition
-com/prueba/stepdefinitions/Hook.java
- com.prueba.stepdefinitions.Hook
 com/prueba/runners/RegistroRunner.java
  com.prueba.runners.RegistroRunner
+com/prueba/stepdefinitions/Hook.java
+ com.prueba.stepdefinitions.Hook
+com/prueba/stepdefinitions/RegistroStepDefinition.java
+ com.prueba.stepdefinitions.RegistroStepDefinition

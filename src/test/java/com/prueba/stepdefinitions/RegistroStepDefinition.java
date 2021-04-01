@@ -21,6 +21,8 @@ public class RegistroStepDefinition {
 
     private EnvironmentVariables env;
 
+
+
     @Dado("que el {word} establece la url base")
     public void queElAnalistaEstableceLaUrlBase(String actor) {
        String theRestApiBaseUrl = EnvironmentSpecificConfiguration.from(env).getProperty("restapi.baseurl");;
@@ -40,15 +42,16 @@ public class RegistroStepDefinition {
     }
 
     @Cuando("ingresa los datos no validos")
-    public void ingresaLosDatosNoValidos(Map<String, Object> datosRegistro) {
+    public void ingresaLosDatosNoValidos(Map<String, String> datosRegistro) {
         Comunes comunes = new Comunes();
         String body = comunes.convertirAJson(datosRegistro);
         OnStage.theActorInTheSpotlight().attemptsTo(Registra.nuevoUsuario(body));
     }
 
-    @Entonces("se valida que la respuesta contenga el {string}")
-    public void seValidaQueLaRespuestaContengaEl(String error) {
-        OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(422)
+
+    @Entonces("se valida que la respuesta contenga el {string} y el {int}")
+    public void seValidaQueLaRespuestaContengaElYElCodigo(String error, int codigo) {
+        OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(codigo)
                 .body(containsString(error))));
     }
 
@@ -69,4 +72,6 @@ public class RegistroStepDefinition {
     public void noSeDeberiaCrearElUsuario() {
         OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(400)));
     }
+
+
 }
