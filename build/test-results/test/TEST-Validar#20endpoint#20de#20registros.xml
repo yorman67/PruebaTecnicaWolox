@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validar endpoint de registros" tests="7" skipped="0" failures="1" errors="0" timestamp="2021-04-01T21:27:47" hostname="DESKTOP-I0C78UK" time="6.453">
+<testsuite name="Validar endpoint de registros" tests="8" skipped="0" failures="1" errors="0" timestamp="2021-04-02T03:55:14" hostname="DESKTOP-I0C78UK" time="4.06">
   <properties/>
-  <testcase name="Crear usuario exitoso" classname="Validar endpoint de registros" time="3.212"/>
-  <testcase name="Validar ingreso de valores numericos" classname="Validar endpoint de registros" time="0.769">
+  <testcase name="Crear usuario exitoso" classname="Validar endpoint de registros" time="0.642"/>
+  <testcase name="Validar ingreso de valores numericos" classname="Validar endpoint de registros" time="0.644">
     <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;400&gt; but was &lt;201&gt;.
 
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at com.prueba.stepdefinitions.RegistroStepDefinition.noSeDeberiaCrearElUsuario(RegistroStepDefinition.java:71)
+	at com.prueba.stepdefinitions.RegistroStepDefinition.noSeDeberiaCrearElUsuario(RegistroStepDefinition.java:63)
 	at ✽.No se deberia crear el usuario(file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature:19)
 </failure>
   </testcase>
-  <testcase name="Valadacion correo con dominio diferente" classname="Validar endpoint de registros" time="0.53"/>
-  <testcase name="Valadacion correo sin direccion sin direccion" classname="Validar endpoint de registros" time="0.462"/>
-  <testcase name="Valadacion coreo condominio incompleto" classname="Validar endpoint de registros" time="0.462"/>
-  <testcase name="Valadacion clave menor a 8 caracteres" classname="Validar endpoint de registros" time="0.451"/>
-  <testcase name="Valadacion usuario ya existe" classname="Validar endpoint de registros" time="0.567"/>
+  <testcase name="Valadacion correo con dominio diferente" classname="Validar endpoint de registros" time="0.484"/>
+  <testcase name="Valadacion correo sin direccion sin direccion" classname="Validar endpoint de registros" time="0.438"/>
+  <testcase name="Valadacion coreo condominio incompleto" classname="Validar endpoint de registros" time="0.44"/>
+  <testcase name="Valadacion clave menor a 8 caracteres" classname="Validar endpoint de registros" time="0.425"/>
+  <testcase name="Valadacion usuario ya existe" classname="Validar endpoint de registros" time="0.547"/>
+  <testcase name="Valadacion datos requeridos" classname="Validar endpoint de registros" time="0.44"/>
   <system-out><![CDATA[Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature
+Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature
+Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature

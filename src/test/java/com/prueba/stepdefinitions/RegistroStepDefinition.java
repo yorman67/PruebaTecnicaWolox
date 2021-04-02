@@ -9,7 +9,6 @@ import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.thucydides.core.util.EnvironmentVariables;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import java.util.Map;
 
@@ -20,8 +19,6 @@ import static org.hamcrest.Matchers.containsString;
 public class RegistroStepDefinition {
 
     private EnvironmentVariables env;
-
-
 
     @Dado("que el {word} establece la url base")
     public void queElAnalistaEstableceLaUrlBase(String actor) {
@@ -48,17 +45,10 @@ public class RegistroStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(Registra.nuevoUsuario(body));
     }
 
-
     @Entonces("se valida que la respuesta contenga el {string} y el {int}")
     public void seValidaQueLaRespuestaContengaElYElCodigo(String error, int codigo) {
         OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(codigo)
                 .body(containsString(error))));
-    }
-
-    @Entonces("valido el esquema")
-    public void validoElEsquema() {
-        OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(422)
-                .body(matchesJsonSchemaInClasspath("RegisterSchema.json"))));
     }
 
     @Cuando("ingrese los datos firstName y lastName con valores numericos")
@@ -72,6 +62,5 @@ public class RegistroStepDefinition {
     public void noSeDeberiaCrearElUsuario() {
         OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(400)));
     }
-
 
 }

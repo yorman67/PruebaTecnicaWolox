@@ -1,6 +1,5 @@
 package com.prueba.task;
 
-import com.prueba.util.Comunes;
 import io.restassured.http.ContentType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
