@@ -37,4 +37,5 @@ public class LoginStepDefinition {
         OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(200)
                 .body(matchesJsonSchemaInClasspath("loginSchema.json"))));
     }
+
 }

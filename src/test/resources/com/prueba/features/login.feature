@@ -8,7 +8,7 @@ Característica: Validar endpoint del login
   Para tener la mayor cobertura en pruebas posible
 
 
-  Esquema del escenario: : Consumir login como <nombreEscenario> correctmante
+  Esquema del escenario: Consumir login como <nombreEscenario> correctmante
     Dado que el Analista establece la url base
     Cuando ingresa las credenciales
       | email | <email> |

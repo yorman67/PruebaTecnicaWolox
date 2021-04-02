@@ -4,3 +4,5 @@ com/prueba/task/Registra.java
  com.prueba.task.Registra
 com/prueba/task/Logueo.java
  com.prueba.task.Logueo
+com/prueba/task/ListaUsuario.java
+ com.prueba.task.ListaUsuario

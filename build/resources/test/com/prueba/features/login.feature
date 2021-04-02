@@ -7,29 +7,41 @@ Característica: Validar endpoint del login
   Quiero realizar la mayor cantidad de pruebas al endpoint de login
   Para tener la mayor cobertura en pruebas posible
 
-  Antecedentes:
+
+  Esquema del escenario: Consumir login como <nombreEscenario> correctmante
     Dado que el Analista establece la url base
     Cuando ingresa las credenciales
       | email | <email> |
       | password  | <password>   |
+    Entonces el servicio debe retornar un codigo valido
+
     Ejemplos:
       | nombreEscenario       | email                | password           |
       | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
       | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
 
-  Escenario: :  Consumir login como <nombreEscenario> correctmante
-    Entonces el servicio debe retornar un codigo valido
-
-
-
-     Escenario: : Validar header response
+    Esquema del escenario: Validar header response de <nombreEscenario>
+      Dado que el Analista establece la url base
+      Cuando ingresa las credenciales
+        | email | <email> |
+        | password  | <password>   |
       Entonces se valida los datos del header
 
+      Ejemplos:
+        | nombreEscenario       | email                | password           |
+        | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
+        | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
 
-
-      Escenario:squema
+      Esquema del escenario:validar esquema response <nombreEscenario>
+        Dado que el Analista establece la url base
+        Cuando ingresa las credenciales
+          | email | <email> |
+          | password  | <password>   |
        Entonces valido el esquema del response
 
-
+        Ejemplos:
+          | nombreEscenario       | email                | password           |
+          | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
+          | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
 
 
