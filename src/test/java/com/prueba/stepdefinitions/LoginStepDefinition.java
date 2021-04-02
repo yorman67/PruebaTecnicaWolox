@@ -4,10 +4,12 @@ import com.prueba.task.Logueo;
 import com.prueba.util.Comunes;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
+import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actors.OnStage;
-
+import org.hamcrest.MatcherAssert;
 import java.util.Map;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
 
 public class LoginStepDefinition {
@@ -22,5 +24,17 @@ public class LoginStepDefinition {
     @Entonces("el servicio debe retornar un codigo valido")
     public void elServicioDebeRetornarUnCodigoValido() {
         OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(200)));
+    }
+
+    @Entonces("se valida los datos del header")
+    public void seValidaLosDatosDelHeader() {
+        String authorization = SerenityRest.lastResponse().header("Authorization");
+        MatcherAssert.assertThat("El campo Autorizacion se encuentra vacio",!authorization.isEmpty());
+    }
+
+    @Entonces("valido el esquema del response")
+    public void validoElEsquemaDelResponse() {
+        OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(200)
+                .body(matchesJsonSchemaInClasspath("loginSchema.json"))));
     }
 }

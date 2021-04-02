@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validar endpoint de registros" tests="8" skipped="0" failures="1" errors="0" timestamp="2021-04-02T03:55:14" hostname="DESKTOP-I0C78UK" time="4.06">
+<testsuite name="Validar endpoint de registros" tests="8" skipped="0" failures="1" errors="0" timestamp="2021-04-02T06:22:41" hostname="DESKTOP-I0C78UK" time="3.948">
   <properties/>
-  <testcase name="Crear usuario exitoso" classname="Validar endpoint de registros" time="0.642"/>
-  <testcase name="Validar ingreso de valores numericos" classname="Validar endpoint de registros" time="0.644">
+  <testcase name="Crear usuario exitoso" classname="Validar endpoint de registros" time="0.63"/>
+  <testcase name="Validar ingreso de valores numericos" classname="Validar endpoint de registros" time="0.586">
     <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;400&gt; but was &lt;201&gt;.
 
@@ -13,12 +13,12 @@ Expected status code &lt;400&gt; but was &lt;201&gt;.
 	at ✽.No se deberia crear el usuario(file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature:19)
 </failure>
   </testcase>
-  <testcase name="Valadacion correo con dominio diferente" classname="Validar endpoint de registros" time="0.484"/>
+  <testcase name="Valadacion correo con dominio diferente" classname="Validar endpoint de registros" time="0.432"/>
   <testcase name="Valadacion correo sin direccion sin direccion" classname="Validar endpoint de registros" time="0.438"/>
-  <testcase name="Valadacion coreo condominio incompleto" classname="Validar endpoint de registros" time="0.44"/>
-  <testcase name="Valadacion clave menor a 8 caracteres" classname="Validar endpoint de registros" time="0.425"/>
-  <testcase name="Valadacion usuario ya existe" classname="Validar endpoint de registros" time="0.547"/>
-  <testcase name="Valadacion datos requeridos" classname="Validar endpoint de registros" time="0.44"/>
+  <testcase name="Valadacion coreo condominio incompleto" classname="Validar endpoint de registros" time="0.442"/>
+  <testcase name="Valadacion clave menor a 8 caracteres" classname="Validar endpoint de registros" time="0.43"/>
+  <testcase name="Valadacion usuario ya existe" classname="Validar endpoint de registros" time="0.557"/>
+  <testcase name="Valadacion datos requeridos" classname="Validar endpoint de registros" time="0.431"/>
   <system-out><![CDATA[Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature

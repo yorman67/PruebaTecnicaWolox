@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Validar endpoint de registros","Crear usuario exitoso","SUCCESS","2021-04-01T22:55:14.66-05:00[America/Bogota]","0.0","0.64"
-"Validar endpoint de registros","Validar ingreso de valores numericos","FAILURE","2021-04-01T22:55:15.3-05:00[America/Bogota]","0.0","0.59"
-"Validar endpoint de registros","Valadacion <nombreEscenario>","SUCCESS","2021-04-01T22:55:15.945-05:00[America/Bogota]","0.0","2.77"

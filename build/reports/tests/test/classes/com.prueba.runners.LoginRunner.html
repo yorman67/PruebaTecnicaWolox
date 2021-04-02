@@ -87,9 +87,104 @@
 <span class="code">
 <pre>Feature from file:///D:/wolox/src/test/resources/com/prueba/features/login.feature
 
-2 Scenarios (?[32m2 passed?[0m)
-6 Steps (?[32m6 passed?[0m)
-0m3.529s
+?[31mFailed scenarios:?[0m
+?[31mfile:///D:/wolox/src/test/resources/com/prueba/features/login.feature:43?[0m# squema
+?[31mfile:///D:/wolox/src/test/resources/com/prueba/features/login.feature:44?[0m# squema
+
+6 Scenarios (?[31m2 failed?[0m, ?[32m4 passed?[0m)
+18 Steps (?[31m2 failed?[0m, ?[32m16 passed?[0m)
+0m6.394s
+
+
+java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/token_expires_at&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/user_id&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/token_expires_at&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance type (string) does not match any allowed primitive type (allowed: [&quot;integer&quot;,&quot;number&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/token_expires_at&quot;}
+    instance: {&quot;pointer&quot;:&quot;/token_expires_at&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;type&quot;
+    found: &quot;string&quot;
+    expected: [&quot;integer&quot;,&quot;number&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/user_id&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+
+  Actual: {&quot;user_id&quot;:146,&quot;token_expires_at&quot;:&quot;1617346348.206&quot;}
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.prueba.stepdefinitions.LoginStepDefinition.validoElEsquemaDelResponse(LoginStepDefinition.java:37)
+	at ✽.valido el esquema del response(file:///D:/wolox/src/test/resources/com/prueba/features/login.feature:39)
+
+java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/token_expires_at&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/user_id&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/token_expires_at&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: instance type (string) does not match any allowed primitive type (allowed: [&quot;integer&quot;,&quot;number&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/token_expires_at&quot;}
+    instance: {&quot;pointer&quot;:&quot;/token_expires_at&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;type&quot;
+    found: &quot;string&quot;
+    expected: [&quot;integer&quot;,&quot;number&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/loginSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/user_id&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+
+  Actual: {&quot;user_id&quot;:147,&quot;token_expires_at&quot;:&quot;1617346349.116&quot;}
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.prueba.stepdefinitions.LoginStepDefinition.validoElEsquemaDelResponse(LoginStepDefinition.java:37)
+	at ✽.valido el esquema del response(file:///D:/wolox/src/test/resources/com/prueba/features/login.feature:39)
 
 
 </pre>
@@ -130,7 +225,7 @@ You can use --strict or @CucumberOptions(strict = true) to suppress this warning
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at Apr 1, 2021 10:55:18 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at Apr 2, 2021 1:22:45 AM</p>
 </div>
 </div>
 </body>
