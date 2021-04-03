@@ -6,11 +6,8 @@ import com.prueba.task.ListaUsuario;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actors.OnStage;
-
-
 import java.util.*;
 
-import static com.prueba.util.VariablesSesion.CORREO;
 import static com.prueba.util.VariablesSesion.TOKEN;
 
 public class Comunes {
@@ -55,7 +52,23 @@ public class Comunes {
             usuarios=SerenityRest.lastResponse().path("page");
         }
         return false;
+    }
 
+    public boolean regular( List<Map<String,String>> usuarios,int paginaActual,int pagina){
+        boolean existeAdmin;
+
+        for (int i = paginaActual; i < pagina; i++) {
+
+            existeAdmin = usuarios.stream().anyMatch(item -> item.get("role").equals("admin"));
+
+            if(existeAdmin) return false;
+
+            OnStage.theActorInTheSpotlight().attemptsTo(
+                    ListaUsuario.con(Serenity.sessionVariableCalled(TOKEN),i+1));
+
+            usuarios=SerenityRest.lastResponse().path("page");
+        }
+        return true;
     }
 
     public boolean buscarUsuariosCorrectos(int paginas,int paginaActual, List<Map<String,String>> usuarios, String tipoUsuario ){
@@ -63,7 +76,7 @@ public class Comunes {
         if(tipoUsuario.equals("admin@wolox.com.ar")){
             return admin(usuarios,paginaActual,paginas);
         }else {
-            return false;
+            return regular(usuarios,paginaActual,paginas);
         }
 
     }
