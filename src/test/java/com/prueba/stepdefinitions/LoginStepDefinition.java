@@ -1,7 +1,7 @@
 package com.prueba.stepdefinitions;
 
 import com.prueba.task.Logueo;
-import com.prueba.util.Comunes;
+import com.prueba.util.Ayuda;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.rest.SerenityRest;
@@ -13,8 +13,8 @@ public class LoginStepDefinition {
 
     @Cuando("ingresa las credenciales")
     public void ingresaLasCredenciales(Map<String, String> datosRegistro) {
-        Comunes comunes = new Comunes();
-        String body = comunes.convertirAJson(datosRegistro);
+        Ayuda ayuda = new Ayuda();
+        String body = ayuda.convertirAJson(datosRegistro);
         OnStage.theActorInTheSpotlight().attemptsTo(Logueo.usuario(body));
     }
 

@@ -1,7 +1,7 @@
 package com.prueba.stepdefinitions;
 
 import com.prueba.task.Consultar;
-import com.prueba.util.Comunes;
+import com.prueba.util.Ayuda;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
@@ -45,8 +45,8 @@ public class ComunStepDefinition {
 
     @Y("consulta el token con credenciales")
     public void consultaElTokenConCredenciales(Map<String, String> credenciales) {
-        Comunes comunes = new Comunes();
-        OnStage.theActorInTheSpotlight().attemptsTo(Consultar.token(comunes.convertirAJson(credenciales)));
+        Ayuda ayuda = new Ayuda();
+        OnStage.theActorInTheSpotlight().attemptsTo(Consultar.token(ayuda.convertirAJson(credenciales)));
     }
 
 }

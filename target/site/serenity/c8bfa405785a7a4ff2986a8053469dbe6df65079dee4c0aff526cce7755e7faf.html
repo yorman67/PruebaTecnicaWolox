@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>usuario no existe</title>
+    <title>Validar ingreso de valores numericos</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -126,7 +126,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > usuario no existe
+        > Validar ingreso de valores numericos
         </span>
         </div>
         <div class="rightbg"></div>
@@ -144,7 +144,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-04-2021 18:23</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-04-2021 18:51</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -159,7 +159,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fa fa-2x fa-comments-o"></i>
-                                        <span class="story-header-title">Validar Endpoint Del Login</span>
+                                        <span class="story-header-title">Validar Endpoint De Registros</span>
                                     </h3>
                                 </div>
 
@@ -173,10 +173,10 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
-                                    usuario no existe
+                                <span class="failing-color">
+                                    Validar ingreso de valores numericos
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -294,7 +294,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                Cuando ingresa las credenciales<br><table class='embedded'><thead><th>email</th><th>assasa@wolox.com.ar</th></thead><tbody><tr><td>password</td><td>1234pruebas</td></tr></tbody></table>
+                                                Cuando ingrese los datos firstName y lastName con valores numericos
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -303,7 +303,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.43s</span></td>
+                        <td width="100"><span class="top-level-step">0.75s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -325,7 +325,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Analista logueo
+                                                Analista registra
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -334,7 +334,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.43s</span></td>
+                        <td width="100"><span class="nested-step">0.74s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -356,7 +356,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Analista executes a POST on the resource /users/sessions
+                                                Analista executes a POST on the resource /users
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -365,7 +365,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.43s</span></td>
+                        <td width="100"><span class="nested-step">0.74s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -383,7 +383,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                POST https://nodejs-qa-training.herokuapp.com/users/sessions
+                                                POST https://nodejs-qa-training.herokuapp.com/users
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -399,18 +399,18 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>Status code: 401</p>
+                                        <p>Status code: 201</p>
                                         <p>Content Type: application/json</p>
                                         <h4>Request Headers</h4>
                                         <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
                                         <h4>Content Body</h4>
-                                        <pre>{<br>    &quot;email&quot;: &quot;assasa@wolox.com.ar&quot;,<br>    &quot;password&quot;: &quot;1234pruebas&quot;<br>}</pre>
+                                        <pre>{<br>    &quot;firstName&quot;: 3,<br>    &quot;lastName&quot;: 8,<br>    &quot;password&quot;: &quot;salvador.chapa64&quot;,<br>    &quot;email&quot;: &quot;ernesto.castellanos@wolox.com.ar&quot;<br>}</pre>
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 130<br>Etag: W/&quot;82-ph3YUaqSNhuTDZkqoaJoyslLTd0&quot;<br>Date: Sat, 03 Apr 2021 23:23:50 GMT<br>Via: 1.1 vegur</pre>
+                                        <pre>Server: Cowboy<br>Connection: keep-alive<br>X-Powered-By: Express<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 15<br>Etag: W/&quot;f-SVITv7O6WzSt6Kf3C43XyH+svbY&quot;<br>Date: Sat, 03 Apr 2021 23:51:22 GMT<br>Via: 1.1 vegur</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;errors&quot;: [<br>        {<br>            &quot;code&quot;: &quot;authentication_error&quot;,<br>            &quot;message&quot;: &quot;Unable to authenticate credentials&quot;<br>        }<br>    ],<br>    &quot;timestamp&quot;: &quot;2021-04-03T23:23:50.870Z&quot;<br>}</pre>
+                                        <pre>{<br>    &quot;user_id&quot;: 810<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -435,13 +435,13 @@
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-SUCCESS">
+                    <tr class="test-FAILURE">
 
                         <td width="50" class="step-icon">
                             <a name="2"></a>
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                    style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                    <i class="fa fa-plus-square-o imgstepSection2 failure-icon"
                                        style="margin-left: 20px; float:left; padding-right:5px"></i>
                                 </a>
                         </td>
@@ -451,7 +451,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                Entonces se valida que la respuesta contenga el "Unable to authenticate credentials" y el 401
+                                                Entonces No se deberia crear el usuario
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -459,19 +459,19 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="top-level-step">FAILURE</span></td>
+                        <td width="100"><span class="top-level-step">0.03s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
                                 <table id="stepSection2" class="step-table-nested" style="display:none;">
 
-                    <tr class="test-SUCCESS">
+                    <tr class="test-FAILURE">
 
                         <td width="70" class="step-icon">
                             <a name="2-0"></a>
                                 <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
                                 </span>
                         </td>
 
@@ -485,17 +485,55 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="130"><span class="nested-group-step">FAILURE</span></td>
+                        <td width="100"><span class="nested-group-step">0.02s</span></td>
                     </tr>
+                        <tr class="test-FAILURE">
+                            <td width="40">&nbsp</td>
+                            <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>Expected status code &lt;400&gt; but was &lt;201&gt;.<br></span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-7""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-7">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)<br />io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)<br />io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)<br />io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)<br />com.prueba.stepdefinitions.RegistroStepDefinition.lambda$noSeDeberiaCrearElUsuario$1(RegistroStepDefinition.java:48)<br />com.prueba.stepdefinitions.RegistroStepDefinition.noSeDeberiaCrearElUsuario(RegistroStepDefinition.java:48)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                            </td>
+                        </tr>
 
                                 </table>
                             </td>
                         </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                         <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.45s</em></span></td>
+                    <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.79s</em></span></td>
                 </tr>
 
             </table>

@@ -2,7 +2,7 @@ package com.prueba.stepdefinitions;
 
 import com.prueba.task.Consultar;
 import com.prueba.task.ListaUsuario;
-import com.prueba.util.Comunes;
+import com.prueba.util.Ayuda;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.core.Serenity;
@@ -18,12 +18,12 @@ import static com.prueba.util.VariablesSesion.TOKEN;
 
 public class ListaUsuariosStepDefinition {
 
-    Comunes comunes = new Comunes();
+    Ayuda ayuda = new Ayuda();
 
     @Cuando("se consulta la lista con las credenciales")
     public void seConsultaLaListaConLasCredenciales(Map<String, String> datosRegistro) {
         Serenity.setSessionVariable(CORREO).to(datosRegistro.get("email"));
-        String body = comunes.convertirAJson(datosRegistro);
+        String body = ayuda.convertirAJson(datosRegistro);
         OnStage.theActorInTheSpotlight().attemptsTo(Consultar.token(body));
         OnStage.theActorInTheSpotlight().attemptsTo(ListaUsuario.con(Serenity.sessionVariableCalled(TOKEN),1));
     }
@@ -31,7 +31,7 @@ public class ListaUsuariosStepDefinition {
     @Entonces("se valida que el response sea correcto")
     public void seValidaQueElResponseSeaCorrecto() {
         List<Map<String,String>>usuarios = SerenityRest.lastResponse().path("page");
-        MatcherAssert.assertThat("El servicio retorno los usurarios de manera incorrecta",comunes.buscarUsuariosCorrectos(
+        MatcherAssert.assertThat("El servicio retorno los usurarios de manera incorrecta", ayuda.buscarUsuariosCorrectos(
                 SerenityRest.lastResponse().path("total_pages"),
                 SerenityRest.lastResponse().path("current_page"),
                 usuarios,Serenity.sessionVariableCalled(CORREO)));

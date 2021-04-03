@@ -4,11 +4,11 @@ com/prueba/task/Registra.java
  com.prueba.task.Registra
 com/prueba/util/VariablesSesion.java
  com.prueba.util.VariablesSesion
-com/prueba/util/Comunes.java
- com.prueba.util.Comunes
+com/prueba/task/ListadoAlbumes.java
+ com.prueba.task.ListadoAlbumes
 com/prueba/task/Consultar.java
  com.prueba.task.Consultar
 com/prueba/task/Logueo.java
  com.prueba.task.Logueo
-com/prueba/task/ListadoAlbumes.java
- com.prueba.task.ListadoAlbumes
+com/prueba/util/Ayuda.java
+ com.prueba.util.Ayuda

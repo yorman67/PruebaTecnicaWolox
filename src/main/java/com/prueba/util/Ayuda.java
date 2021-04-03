@@ -6,11 +6,12 @@ import com.prueba.task.ListaUsuario;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actors.OnStage;
+
 import java.util.*;
 
 import static com.prueba.util.VariablesSesion.TOKEN;
 
-public class Comunes {
+public class Ayuda {
 
     private final Faker fake = Faker.instance(new Locale("es"), new Random());
 
@@ -78,6 +79,10 @@ public class Comunes {
         }else {
             return regular(usuarios,paginaActual,paginas);
         }
+    }
 
+    public boolean listaAlbumes () {
+        List<String> albumnes = SerenityRest.lastResponse().body().as(List.class);
+        return  albumnes.isEmpty();
     }
 }
