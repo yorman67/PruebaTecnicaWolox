@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Validar endpoint de registros" skipped="0" tests="8" time="4.27" timestamp="2021-04-02 02:17:03"><testcase name="Crear usuario exitoso"/><testcase name="Validar ingreso de valores numericos"><failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;201&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;201&gt;.
-</failure><system-err>1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;201&gt;.
-&#13;
-com.prueba.stepdefinitions.RegistroStepDefinition.noSeDeberiaCrearElUsuario(RegistroStepDefinition.java:63)&#13;
-✽.No se deberia crear el usuario(file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature:19)&#13;
-</system-err></testcase><testcase name="Valadacion &lt;nombreEscenario&gt;"/></testsuite>

@@ -18,13 +18,7 @@ import static org.hamcrest.Matchers.containsString;
 
 public class RegistroStepDefinition {
 
-    private EnvironmentVariables env;
 
-    @Dado("que el {word} establece la url base")
-    public void queElAnalistaEstableceLaUrlBase(String actor) {
-       String theRestApiBaseUrl = EnvironmentSpecificConfiguration.from(env).getProperty("restapi.baseurl");;
-        OnStage.theActorCalled(actor).whoCan(CallAnApi.at(String.valueOf(theRestApiBaseUrl)));
-    }
 
     @Cuando("envia los datos correctos")
     public void enviaLosDatosCorrectos() {

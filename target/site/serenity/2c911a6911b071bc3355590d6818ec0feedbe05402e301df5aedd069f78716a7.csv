@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Validar endpoint del login","consultar lista de usuarios como <nombreEscenario> correctmante","SUCCESS","2021-04-02T02:16:54.552-05:00[America/Bogota]","0.0","4.2"
-"Validar endpoint del login","Consumir login como <nombreEscenario> correctmante","SUCCESS","2021-04-02T02:16:59.634-05:00[America/Bogota]","0.0","1.23"
-"Validar endpoint del login","Validar header response de <nombreEscenario>","SUCCESS","2021-04-02T02:17:00.866-05:00[America/Bogota]","0.0","1.19"
-"Validar endpoint del login","validar esquema response <nombreEscenario>","SUCCESS","2021-04-02T02:17:02.059-05:00[America/Bogota]","0.0","1.41"
