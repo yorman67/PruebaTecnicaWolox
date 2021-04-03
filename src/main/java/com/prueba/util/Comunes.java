@@ -2,12 +2,16 @@ package com.prueba.util;
 
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
+import com.prueba.task.ListaUsuario;
+import net.serenitybdd.core.Serenity;
+import net.serenitybdd.rest.SerenityRest;
+import net.serenitybdd.screenplay.actors.OnStage;
 
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
+
+import static com.prueba.util.VariablesSesion.CORREO;
+import static com.prueba.util.VariablesSesion.TOKEN;
 
 public class Comunes {
 
@@ -36,4 +40,31 @@ public class Comunes {
         return gson.toJson(dataTableBody);
     }
 
+    public boolean admin( List<Map<String,String>> usuarios,int paginaActual,int pagina){
+        boolean existeAdmin;
+
+        for (int i = paginaActual; i < pagina; i++) {
+
+            existeAdmin = usuarios.stream().anyMatch(item -> item.get("role").equals("admin"));
+
+            if(existeAdmin) return true;
+
+            OnStage.theActorInTheSpotlight().attemptsTo(
+                    ListaUsuario.con(Serenity.sessionVariableCalled(TOKEN),i+1));
+
+            usuarios=SerenityRest.lastResponse().path("page");
+        }
+        return false;
+
+    }
+
+    public boolean buscarUsuariosCorrectos(int paginas,int paginaActual, List<Map<String,String>> usuarios, String tipoUsuario ){
+
+        if(tipoUsuario.equals("admin@wolox.com.ar")){
+            return admin(usuarios,paginaActual,paginas);
+        }else {
+            return false;
+        }
+
+    }
 }

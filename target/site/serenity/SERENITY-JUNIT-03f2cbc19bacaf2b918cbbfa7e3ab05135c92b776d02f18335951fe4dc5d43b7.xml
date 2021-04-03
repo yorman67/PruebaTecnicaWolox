@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Validar endpoint de listado de usuarios" skipped="0" tests="2" time="47.35" timestamp="2021-04-03 01:39:31"><testcase name="validar response segun credenciales"><failure message="El servicio retorno los usurarios de manera incorrecta" type="java.lang.AssertionError">El servicio retorno los usurarios de manera incorrecta</failure><system-err>El servicio retorno los usurarios de manera incorrecta&#13;
+com.prueba.stepdefinitions.ListaUsuariosStepDefinition.seValidaQueElResponseSeaCorrecto(ListaUsuariosStepDefinition.java:35)&#13;
+✽.se valida que el response sea correcto(file:///D:/wolox/src/test/resources/com/prueba/features/listadoUsuario.feature:39)&#13;
+</system-err></testcase></testsuite>

@@ -32,10 +32,9 @@ public class LoginStepDefinition {
         MatcherAssert.assertThat("El campo Autorizacion se encuentra vacio",!authorization.isEmpty());
     }
 
-    @Entonces("valido el esquema del response")
-    public void validoElEsquemaDelResponse() {
+    @Entonces("valido el esquema del response con el esquema {string}")
+    public void validoElEsquemaDelResponseConElEsquemaEsquema(String esquema) {
         OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(200)
-                .body(matchesJsonSchemaInClasspath("loginSchema.json"))));
+                .body(matchesJsonSchemaInClasspath(esquema))));
     }
-
 }

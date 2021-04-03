@@ -37,11 +37,11 @@ Característica: Validar endpoint del login
         Cuando ingresa las credenciales
           | email | <email> |
           | password  | <password>   |
-       Entonces valido el esquema del response
+       Entonces valido el esquema del response con el esquema "<esquema>"
 
         Ejemplos:
-          | nombreEscenario       | email                | password           |
-          | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
-          | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
+          | nombreEscenario       | email                | password           | esquema          |
+          | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 | loginSchema.json |
+          | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 | loginSchema.json |
 
 
