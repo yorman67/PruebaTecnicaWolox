@@ -21,8 +21,7 @@ public class LoginStepDefinition {
     @Entonces("se valida los datos del header")
     public void seValidaLosDatosDelHeader() {
         String authorization = SerenityRest.lastResponse().header("Authorization");
-        MatcherAssert.assertThat("El campo Autorizacion se encuentra vacio",!authorization.isEmpty());
+        MatcherAssert.assertThat("El campo Autorizacion se encuentra vacio, o no existe",!authorization.isEmpty());
     }
-
 
 }

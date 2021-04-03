@@ -6,11 +6,15 @@ com/prueba/runners/ListaUsuarioRunner.java
  com.prueba.runners.ListaUsuarioRunner
 com/prueba/runners/LoginRunner.java
  com.prueba.runners.LoginRunner
+com/prueba/stepdefinitions/LoginStepDefinition.java
+ com.prueba.stepdefinitions.LoginStepDefinition
+com/prueba/stepdefinitions/AlbumesStepDefinition.java
+ com.prueba.stepdefinitions.AlbumesStepDefinition
+com/prueba/runners/AlbumesRunner.java
+ com.prueba.runners.AlbumesRunner
 com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
  com.prueba.stepdefinitions.ListaUsuariosStepDefinition
 com/prueba/stepdefinitions/RegistroStepDefinition.java
  com.prueba.stepdefinitions.RegistroStepDefinition
 com/prueba/stepdefinitions/ComunStepDefinition.java
  com.prueba.stepdefinitions.ComunStepDefinition
-com/prueba/stepdefinitions/LoginStepDefinition.java
- com.prueba.stepdefinitions.LoginStepDefinition

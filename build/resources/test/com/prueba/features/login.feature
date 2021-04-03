@@ -32,7 +32,7 @@ Característica: Validar endpoint del login
         | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
         | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
 
-      Esquema del escenario:validar esquema response <nombreEscenario>
+  Esquema del escenario:validar esquema response <nombreEscenario>
         Dado que el Analista establece la url base
         Cuando ingresa las credenciales
           | email | <email> |
@@ -43,5 +43,13 @@ Característica: Validar endpoint del login
           | nombreEscenario       | email                | password           | esquema          |
           | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 | loginSchema.json |
           | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 | loginSchema.json |
+
+
+  Escenario: usuario no existe
+    Dado que el Analista establece la url base
+    Cuando ingresa las credenciales
+      | email    | assasa@wolox.com.ar |
+      | password | 1234pruebas         |
+    Entonces se valida que la respuesta contenga el "Unable to authenticate credentials" y el 401
 
 

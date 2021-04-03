@@ -24,7 +24,6 @@ public class Logueo implements Task {
                         .relaxedHTTPSValidation()
                         .body(body))
         );
-
     }
 
     public static Logueo usuario(String body){

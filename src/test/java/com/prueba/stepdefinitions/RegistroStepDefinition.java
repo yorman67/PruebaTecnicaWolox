@@ -39,11 +39,6 @@ public class RegistroStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(Registra.nuevoUsuario(body));
     }
 
-    @Entonces("se valida que la respuesta contenga el {string} y el {int}")
-    public void seValidaQueLaRespuestaContengaElYElCodigo(String error, int codigo) {
-        OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(codigo)
-                .body(containsString(error))));
-    }
 
     @Cuando("ingrese los datos firstName y lastName con valores numericos")
     public void ingreseLosDatosFirstNameYLastNameConValoresNumericos() {

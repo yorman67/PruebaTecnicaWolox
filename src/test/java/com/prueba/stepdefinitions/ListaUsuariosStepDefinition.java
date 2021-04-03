@@ -1,7 +1,7 @@
 package com.prueba.stepdefinitions;
 
+import com.prueba.task.Consultar;
 import com.prueba.task.ListaUsuario;
-import com.prueba.task.Logueo;
 import com.prueba.util.Comunes;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
@@ -24,8 +24,7 @@ public class ListaUsuariosStepDefinition {
     public void seConsultaLaListaConLasCredenciales(Map<String, String> datosRegistro) {
         Serenity.setSessionVariable(CORREO).to(datosRegistro.get("email"));
         String body = comunes.convertirAJson(datosRegistro);
-        OnStage.theActorInTheSpotlight().attemptsTo(Logueo.usuario(body));
-        Serenity.setSessionVariable(TOKEN).to(SerenityRest.lastResponse().header("Authorization"));
+        OnStage.theActorInTheSpotlight().attemptsTo(Consultar.token(body));
         OnStage.theActorInTheSpotlight().attemptsTo(ListaUsuario.con(Serenity.sessionVariableCalled(TOKEN),1));
     }
 
