@@ -31,3 +31,16 @@ Característica: Validar endpoint de compra de albumes
       | email                | password           | album | error           | codigo |
       | admin@wolox.com.ar   | candidatoWolox2020 | 101   | not_found_error | 404    |
       | regular@wolox.com.ar | candidatoWolox2020 | 102   | not_found_error | 404    |
+
+
+  Escenario: Validar token incorrecto
+    Dado que el Analista establece la url base
+    Y el token no sea valiado
+    Cuando se realiza la compra del album "101"
+    Entonces se valida que la respuesta contenga el "Invalid token" y el 401
+
+  Escenario: valdiar squema de error
+    Dado que el Analista establece la url base
+    Y el token no sea valiado
+    Cuando se realiza la compra del album "101"
+    Entonces valido el esquema del response con el esquema "errorSchema.json"
