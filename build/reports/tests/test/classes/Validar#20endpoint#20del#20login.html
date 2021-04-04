@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">8</div>
+<div class="counter">7</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">8.171s</div>
+<div class="counter">4.814s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,42 +82,37 @@
 </thead>
 <tr>
 <td class="success">Consumir login como usuario administrador correctmante</td>
-<td class="success">0.598s</td>
+<td class="success">0.649s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Consumir login como usuario regular correctmante</td>
-<td class="success">0.637s</td>
+<td class="success">0.768s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Validar header response de usuario administrador</td>
-<td class="success">0.574s</td>
+<td class="success">0.673s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Validar header response de usuario regular</td>
-<td class="success">0.619s</td>
+<td class="success">0.740s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">consultar lista de usuarios como usuario administrador correctmante</td>
-<td class="success">3.343s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">consultar lista de usuarios como usuario regular correctmante</td>
-<td class="success">0.985s</td>
+<td class="success">usuario no existe</td>
+<td class="success">0.471s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">validar esquema response usuario administrador</td>
-<td class="success">0.808s</td>
+<td class="success">0.655s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">validar esquema response usuario regular</td>
-<td class="success">0.607s</td>
+<td class="success">0.858s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -125,9 +120,7 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Feature from file:///D:/wolox/src/test/resources/com/prueba/features/listadoUsuario.feature
-Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
-Feature from file:///D:/wolox/src/test/resources/com/prueba/features/listadoUsuario.feature
+<pre>Feature from file:///D:/wolox/src/test/resources/com/prueba/features/login.feature
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/login.feature
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
@@ -148,35 +141,6 @@ Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgu
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO  - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-
-consultar lista de usuarios como &lt;nombreEscenario&gt; correctmante(validar-endpoint-del-login;consultar-lista-de-usuarios-como-&lt;nombreescenario&gt;-correctmante)
--------------------------------------------------------------------
-[Test worker] INFO  - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-consultar lista de usuarios como &lt;nombreEscenario&gt; correctmante
-----------------------------------------------------------------------------
-[Test worker] INFO  - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
-
-consultar lista de usuarios como &lt;nombreEscenario&gt; correctmante
-----------------------------------------------------------------------------
-[Test worker] INFO  - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -263,6 +227,25 @@ validar esquema response &lt;nombreEscenario&gt;
 
 validar esquema response &lt;nombreEscenario&gt;
 ----------------------------------------------------------------------------
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+usuario no existe(validar-endpoint-del-login;usuario-no-existe)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+usuario no existe
+----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -274,7 +257,7 @@ validar esquema response &lt;nombreEscenario&gt;
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8.3</a> at Apr 2, 2021 2:17:07 AM</p>
+<a href="http://www.gradle.org">Gradle 6.8.3</a> at Apr 4, 2021 10:17:57 AM</p>
 </div>
 </div>
 </body>

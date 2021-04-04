@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Validar endpoint de albumes comprados" skipped="0" tests="4" time="8.86" timestamp="2021-04-03 09:31:00"><testcase name="consultar albumes comprados correctmante"/><testcase name="validar el esquema con &lt;nombreEscenario&gt;"/></testsuite>

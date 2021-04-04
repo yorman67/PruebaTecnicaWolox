@@ -42,7 +42,7 @@ public class Ayuda {
     public boolean admin( List<Map<String,String>> usuarios,int paginaActual,int pagina){
         boolean existeAdmin;
 
-        for (int i = paginaActual; i < pagina; i++) {
+        for (int i = paginaActual; i < pagina+1; i++) {
 
             existeAdmin = usuarios.stream().anyMatch(item -> item.get("role").equals("admin"));
 

@@ -1,36 +1,36 @@
-com/prueba/runners/RegistroRunner.java
- com.prueba.runners.RegistroRunner
-com/prueba/stepdefinitions/Hook.java
- com.prueba.stepdefinitions.Hook
-com/prueba/runners/ListaUsuarioRunner.java
- com.prueba.runners.ListaUsuarioRunner
-com/prueba/runners/LoginRunner.java
- com.prueba.runners.LoginRunner
 com/prueba/runners/AlbumesRunner.java
  com.prueba.runners.AlbumesRunner
 com/prueba/runners/FotosAlbumesRunner.java
  com.prueba.runners.FotosAlbumesRunner
 com/prueba/runners/AlbumesCompradosRunner.java
  com.prueba.runners.AlbumesCompradosRunner
+com/prueba/runners/ListaUsuarioRunner.java
+ com.prueba.runners.ListaUsuarioRunner
+com/prueba/runners/LoginRunner.java
+ com.prueba.runners.LoginRunner
+com/prueba/runners/InvalidarUsuarioRunner.java
+ com.prueba.runners.InvalidarUsuarioRunner
 com/prueba/stepdefinitions/FotosAlbumStepDefiniton.java
  com.prueba.stepdefinitions.FotosAlbumStepDefiniton
+com/prueba/stepdefinitions/InvalidarUsuarioStepDefinition.java
+ com.prueba.stepdefinitions.InvalidarUsuarioStepDefinition
+com/prueba/stepdefinitions/Hook.java
+ com.prueba.stepdefinitions.Hook
 com/prueba/runners/ConsultaCompraAlbumRunner.java
  com.prueba.runners.ConsultaCompraAlbumRunner
+com/prueba/runners/RegistroRunner.java
+ com.prueba.runners.RegistroRunner
 com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
  com.prueba.stepdefinitions.ListaUsuariosStepDefinition
 com/prueba/stepdefinitions/RegistroStepDefinition.java
  com.prueba.stepdefinitions.RegistroStepDefinition
 com/prueba/stepdefinitions/AlbumesCompradosStepDefinition.java
  com.prueba.stepdefinitions.AlbumesCompradosStepDefinition
-com/prueba/runners/InvalidarUsuarioRunner.java
- com.prueba.runners.InvalidarUsuarioRunner
 com/prueba/stepdefinitions/CompraAlbumStepDefinition.java
  com.prueba.stepdefinitions.CompraAlbumStepDefinition
-com/prueba/stepdefinitions/AlbumesStepDefinition.java
- com.prueba.stepdefinitions.AlbumesStepDefinition
-com/prueba/stepdefinitions/ComunStepDefinition.java
- com.prueba.stepdefinitions.ComunStepDefinition
-com/prueba/stepdefinitions/InvalidarUsuarioStepDefinition.java
- com.prueba.stepdefinitions.InvalidarUsuarioStepDefinition
 com/prueba/stepdefinitions/LoginStepDefinition.java
  com.prueba.stepdefinitions.LoginStepDefinition
+com/prueba/stepdefinitions/ComunStepDefinition.java
+ com.prueba.stepdefinitions.ComunStepDefinition
+com/prueba/stepdefinitions/AlbumesStepDefinition.java
+ com.prueba.stepdefinitions.AlbumesStepDefinition

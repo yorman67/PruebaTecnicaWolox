@@ -8,7 +8,7 @@
 
 8 Scenarios (?[31m1 failed?[0m, ?[32m7 passed?[0m)
 24 Steps (?[31m1 failed?[0m, ?[32m23 passed?[0m)
-0m4.334s
+0m4.688s
 
 
 java.lang.AssertionError: 1 expectation failed.
@@ -17,7 +17,7 @@ Expected status code <400> but was <201>.
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at com.prueba.stepdefinitions.RegistroStepDefinition.noSeDeberiaCrearElUsuario(RegistroStepDefinition.java:63)
+	at com.prueba.stepdefinitions.RegistroStepDefinition.noSeDeberiaCrearElUsuario(RegistroStepDefinition.java:48)
 	at ✽.No se deberia crear el usuario(file:///D:/wolox/src/test/resources/com/prueba/features/registro.feature:19)
 
 

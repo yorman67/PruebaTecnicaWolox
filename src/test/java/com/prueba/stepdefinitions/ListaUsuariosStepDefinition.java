@@ -1,5 +1,6 @@
 package com.prueba.stepdefinitions;
 
+import com.prueba.questions.ValdiarResponse;
 import com.prueba.task.Consultar;
 import com.prueba.task.ListaUsuario;
 import com.prueba.util.Ayuda;
@@ -8,13 +9,11 @@ import io.cucumber.java.es.Entonces;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actors.OnStage;
-import org.hamcrest.MatcherAssert;
-
-import java.util.List;
 import java.util.Map;
 
 import static com.prueba.util.VariablesSesion.CORREO;
 import static com.prueba.util.VariablesSesion.TOKEN;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class ListaUsuariosStepDefinition {
 
@@ -30,10 +29,7 @@ public class ListaUsuariosStepDefinition {
 
     @Entonces("se valida que el response sea correcto")
     public void seValidaQueElResponseSeaCorrecto() {
-        List<Map<String,String>>usuarios = SerenityRest.lastResponse().path("page");
-        MatcherAssert.assertThat("El servicio retorno los usurarios de manera incorrecta", ayuda.buscarUsuariosCorrectos(
-                SerenityRest.lastResponse().path("total_pages"),
-                SerenityRest.lastResponse().path("current_page"),
-                usuarios,Serenity.sessionVariableCalled(CORREO)));
+        OnStage.theActorInTheSpotlight().should(seeThat("El servicio retorno los usurarios de manera incorrecta : "
+                + SerenityRest.lastResponse().body().asString(), ValdiarResponse.correcta()));
     }
 }
