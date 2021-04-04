@@ -31,7 +31,6 @@ Característica: Validar endpoint de fotos por almbum
       | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
       | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
 
-
   Esquema del escenario: validar el esquema de la respuesta del servicio
     Dado que el Analista establece la url base
     Y consulta el token con credenciales
