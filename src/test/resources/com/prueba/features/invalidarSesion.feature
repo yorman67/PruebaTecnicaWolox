@@ -18,3 +18,15 @@ Característica: Validar endpoint de invalidar sesion
       | nombreEscenario       |  | email                | password           | error | codigo |
       | usuario administrador |  | admin@wolox.com.ar   | candidatoWolox2020 |       | 200    |
       | usuario regular       |  | regular@wolox.com.ar | candidatoWolox2020 |       | 422    |
+
+  Escenario: Validar token incorrecto
+    Dado que el Analista establece la url base
+    Y el token no sea valiado
+    Cuando se invalida el usuario
+    Entonces se valida que la respuesta contenga el "Invalid token" y el 401
+
+  Escenario: valdiar squema de error
+    Dado que el Analista establece la url base
+    Y el token no sea valiado
+    Cuando se invalida el usuario
+    Entonces valido el esquema del response con el esquema "errorSchema.json"
