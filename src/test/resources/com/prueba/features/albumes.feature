@@ -19,7 +19,6 @@ Característica: Validar endpoint de albumes
       | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
       | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
 
-
   Esquema del escenario: validar el esquema con <nombreEscenario>
     Dado que el Analista establece la url base
     Y consulta el token con credenciales
@@ -44,3 +43,16 @@ Característica: Validar endpoint de albumes
        | nombreEscenario       | email                | password           |
        | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
        | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
+
+  Escenario: Validar token incorrecto
+    Dado que el Analista establece la url base
+    Y el token no sea valiado
+    Cuando se consultan los albumes
+    Entonces se valida que la respuesta contenga el "Invalid token" y el 401
+
+
+  Escenario: valdiar squema de error
+    Dado que el Analista establece la url base
+    Y el token no sea valiado
+    Cuando se consultan los albumes
+    Entonces valido el esquema del response con el esquema "errorSchema.json"

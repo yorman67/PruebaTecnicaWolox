@@ -30,7 +30,7 @@ com/prueba/stepdefinitions/CompraAlbumStepDefinition.java
  com.prueba.stepdefinitions.CompraAlbumStepDefinition
 com/prueba/stepdefinitions/LoginStepDefinition.java
  com.prueba.stepdefinitions.LoginStepDefinition
-com/prueba/stepdefinitions/ComunStepDefinition.java
- com.prueba.stepdefinitions.ComunStepDefinition
 com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
  com.prueba.stepdefinitions.ListaUsuariosStepDefinition
+com/prueba/stepdefinitions/ComunStepDefinition.java
+ com.prueba.stepdefinitions.ComunStepDefinition

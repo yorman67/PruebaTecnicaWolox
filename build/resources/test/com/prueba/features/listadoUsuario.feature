@@ -46,10 +46,6 @@ Característica: Validar endpoint de listado de usuarios
     Cuando se ingresa token invalido
     Entonces se valida que la respuesta contenga el "Invalid token" y el 401
 
-  Escenario: Validar paginacion incorrecta
-    Dado que el Analista establece la url base
-    Cuando se ingresa pagina que no existe
-    Entonces se valida que la respuesta contenga el "page" y el 200
 
   Escenario: valdiar squema de error
     Dado que el Analista establece la url base

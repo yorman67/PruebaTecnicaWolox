@@ -45,7 +45,7 @@ Característica: Validar endpoint de listado de usuarios
     Dado que el Analista establece la url base
     Cuando se ingresa token invalido
     Entonces se valida que la respuesta contenga el "Invalid token" y el 401
-    
+
 
   Escenario: valdiar squema de error
     Dado que el Analista establece la url base
