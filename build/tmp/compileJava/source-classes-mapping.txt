@@ -2,13 +2,15 @@ com/prueba/task/ListaUsuario.java
  com.prueba.task.ListaUsuario
 com/prueba/task/Registra.java
  com.prueba.task.Registra
-com/prueba/util/VariablesSesion.java
- com.prueba.util.VariablesSesion
-com/prueba/task/ListadoAlbumes.java
- com.prueba.task.ListadoAlbumes
-com/prueba/task/Consultar.java
- com.prueba.task.Consultar
 com/prueba/task/Logueo.java
  com.prueba.task.Logueo
+com/prueba/task/ListadoAlbumes.java
+ com.prueba.task.ListadoAlbumes
+com/prueba/util/VariablesSesion.java
+ com.prueba.util.VariablesSesion
+com/prueba/task/Consultar.java
+ com.prueba.task.Consultar
 com/prueba/util/Ayuda.java
  com.prueba.util.Ayuda
+com/prueba/task/Fotos.java
+ com.prueba.task.Fotos

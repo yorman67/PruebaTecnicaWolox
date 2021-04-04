@@ -33,7 +33,7 @@ Característica: Validar endpoint de albumes
       | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 | listadoAlbumesSchema.json |
       | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 | listadoAlbumesSchema.json |
 
-   Esquema del escenario: valdiar response
+   Esquema del escenario: valdiar response para <nombreEscenario>
      Dado que el Analista establece la url base
      Y consulta el token con credenciales
        | email    | <email>    |

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Validar endpoint de fotos por almbum" skipped="0" tests="4" time="8.25" timestamp="2021-04-03 07:51:16"><testcase name="consultar fotos de los correctmante con &lt;nombreEscenario&gt;"/><testcase name="validar el esquema de la respuesta del servicio"/></testsuite>

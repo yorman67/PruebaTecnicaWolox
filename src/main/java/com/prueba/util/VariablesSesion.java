@@ -2,5 +2,6 @@ package com.prueba.util;
 
 public enum VariablesSesion {
     CORREO,
-    TOKEN
+    TOKEN,
+    ID_ALBUMES
 }
