@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Validar endpoint de compra de albumes" skipped="0" tests="4" time="7.77" timestamp="2021-04-03 10:46:30"><testcase name="realizar compra de un album"/><testcase name="realizar compra de un album que no existe"/></testsuite>

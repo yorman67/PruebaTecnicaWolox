@@ -6,6 +6,8 @@ import com.prueba.task.ListaUsuario;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.rest.questions.LastResponse;
+import org.hamcrest.MatcherAssert;
 
 import java.util.*;
 
@@ -91,5 +93,19 @@ public class Ayuda {
        List<Map<String, Object>> albumnes = SerenityRest.lastResponse().getBody().as(List.class);
        Serenity.setSessionVariable(ALBUMES_COMPRADOS).to(albumnes);
        return  albumnes.isEmpty();
+   }
+
+   public boolean albumComprado(){
+        if(SerenityRest.lastResponse().statusCode()==201){
+            System.out.println("Se compro el album");
+            return true;
+        }else {
+            if(SerenityRest.lastResponse().statusCode()==422){
+                System.out.println("Este usuario ya compro este album");
+                return true;
+            }else{
+                return false;
+            }
+        }
    }
 }

@@ -8,11 +8,13 @@ com/prueba/task/ListadoAlbumes.java
  com.prueba.task.ListadoAlbumes
 com/prueba/task/Fotos.java
  com.prueba.task.Fotos
-com/prueba/util/Ayuda.java
- com.prueba.util.Ayuda
-com/prueba/util/VariablesSesion.java
- com.prueba.util.VariablesSesion
+com/prueba/task/ConsultaCompra.java
+ com.prueba.task.ConsultaCompra
+com/prueba/task/Comprar.java
+ com.prueba.task.Comprar
 com/prueba/task/Consultar.java
  com.prueba.task.Consultar
-com/prueba/task/Compra.java
- com.prueba.task.Compra
+com/prueba/util/VariablesSesion.java
+ com.prueba.util.VariablesSesion
+com/prueba/util/Ayuda.java
+ com.prueba.util.Ayuda

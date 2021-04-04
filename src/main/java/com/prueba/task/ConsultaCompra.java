@@ -9,12 +9,12 @@ import org.apache.http.HttpHeaders;
 
 import java.util.Map;
 
-public class Compra implements Task {
+public class ConsultaCompra implements Task {
 
     private String token;
     private  Map<String,String> usuarioLogueado;
 
-    public Compra(String token,  Map<String,String> usuarioLogueado) {
+    public ConsultaCompra(String token, Map<String,String> usuarioLogueado) {
         this.token = token;
         this.usuarioLogueado = usuarioLogueado;
     }
@@ -30,7 +30,7 @@ public class Compra implements Task {
         );
     }
 
-    public static Compra albumes(String token, Map<String,String> usuarioLogueado){
-        return Tasks.instrumented(Compra.class,token,usuarioLogueado);
+    public static ConsultaCompra albumes(String token, Map<String,String> usuarioLogueado){
+        return Tasks.instrumented(ConsultaCompra.class,token,usuarioLogueado);
     }
 }

@@ -1,6 +1,6 @@
 package com.prueba.stepdefinitions;
 
-import com.prueba.task.Compra;
+import com.prueba.task.ConsultaCompra;
 import com.prueba.util.Ayuda;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
@@ -15,7 +15,7 @@ public class AlbumesCompradosStepDefinition {
 
     @Cuando("se consultan los albumes comprados")
     public void seConsultanLosAlbumesComprados() {
-        OnStage.theActorInTheSpotlight().attemptsTo(Compra.albumes(Serenity.sessionVariableCalled(TOKEN),
+        OnStage.theActorInTheSpotlight().attemptsTo(ConsultaCompra.albumes(Serenity.sessionVariableCalled(TOKEN),
                 Serenity.sessionVariableCalled(USUARIO_LOGUEADO)));
     }
 
