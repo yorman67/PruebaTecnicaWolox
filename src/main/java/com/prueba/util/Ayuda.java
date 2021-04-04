@@ -9,8 +9,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 
 import java.util.*;
 
-import static com.prueba.util.VariablesSesion.ID_ALBUMES;
-import static com.prueba.util.VariablesSesion.TOKEN;
+import static com.prueba.util.VariablesSesion.*;
 
 public class Ayuda {
 
@@ -87,4 +86,10 @@ public class Ayuda {
         Serenity.setSessionVariable(ID_ALBUMES).to(albumnes);
         return  albumnes.isEmpty();
     }
+
+   public boolean albumesComprados(){
+       List<Map<String, Object>> albumnes = SerenityRest.lastResponse().getBody().as(List.class);
+       Serenity.setSessionVariable(ALBUMES_COMPRADOS).to(albumnes);
+       return  albumnes.isEmpty();
+   }
 }

@@ -14,5 +14,4 @@ public class FotosAlbumStepDefiniton {
     public void seConsultanLaFotosDelAlmbum() {
         OnStage.theActorInTheSpotlight().attemptsTo(Fotos.album(Serenity.sessionVariableCalled(TOKEN),"1"));
     }
-
 }
