@@ -18,3 +18,5 @@ com/prueba/util/VariablesSesion.java
  com.prueba.util.VariablesSesion
 com/prueba/util/Ayuda.java
  com.prueba.util.Ayuda
+com/prueba/task/Invalidar.java
+ com.prueba.task.Invalidar

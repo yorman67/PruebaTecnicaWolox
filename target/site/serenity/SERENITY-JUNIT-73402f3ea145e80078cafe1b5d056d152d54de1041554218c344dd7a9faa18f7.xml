@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Validar endpoint de invalidar sesion" skipped="0" tests="2" time="4.0" timestamp="2021-04-03 11:07:43"><testcase name="invalidar otros usuarios como &lt;nombreEscenario&gt;"><failure message="1 expectation failed.&#10;Expected status code &lt;422&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;422&gt; but was &lt;200&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;422&gt; but was &lt;200&gt;.
+&#13;
+com.prueba.stepdefinitions.ComunStepDefinition.seValidaQueLaRespuestaContengaElYElCodigo(ComunStepDefinition.java:43)&#13;
+✽.se valida que la respuesta contenga el "" y el 422(file:///D:/wolox/src/test/resources/com/prueba/features/invalidarSesion.feature:16)&#13;
+</system-err></testcase></testsuite>

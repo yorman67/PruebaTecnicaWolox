@@ -2,6 +2,7 @@ package com.prueba.stepdefinitions;
 
 import com.prueba.task.Consultar;
 import com.prueba.util.Ayuda;
+import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import io.cucumber.java.es.Y;
@@ -48,5 +49,6 @@ public class ComunStepDefinition {
         Ayuda ayuda = new Ayuda();
         OnStage.theActorInTheSpotlight().attemptsTo(Consultar.token(ayuda.convertirAJson(credenciales)));
     }
+
 
 }

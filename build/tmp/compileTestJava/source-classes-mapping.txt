@@ -22,11 +22,15 @@ com/prueba/stepdefinitions/RegistroStepDefinition.java
  com.prueba.stepdefinitions.RegistroStepDefinition
 com/prueba/stepdefinitions/AlbumesCompradosStepDefinition.java
  com.prueba.stepdefinitions.AlbumesCompradosStepDefinition
+com/prueba/runners/InvalidarUsuarioRunner.java
+ com.prueba.runners.InvalidarUsuarioRunner
 com/prueba/stepdefinitions/CompraAlbumStepDefinition.java
  com.prueba.stepdefinitions.CompraAlbumStepDefinition
 com/prueba/stepdefinitions/AlbumesStepDefinition.java
  com.prueba.stepdefinitions.AlbumesStepDefinition
 com/prueba/stepdefinitions/ComunStepDefinition.java
  com.prueba.stepdefinitions.ComunStepDefinition
+com/prueba/stepdefinitions/InvalidarUsuarioStepDefinition.java
+ com.prueba.stepdefinitions.InvalidarUsuarioStepDefinition
 com/prueba/stepdefinitions/LoginStepDefinition.java
  com.prueba.stepdefinitions.LoginStepDefinition
