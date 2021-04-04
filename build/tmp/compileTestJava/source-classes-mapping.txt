@@ -10,8 +10,8 @@ com/prueba/runners/LoginRunner.java
  com.prueba.runners.LoginRunner
 com/prueba/runners/InvalidarUsuarioRunner.java
  com.prueba.runners.InvalidarUsuarioRunner
-com/prueba/stepdefinitions/FotosAlbumStepDefiniton.java
- com.prueba.stepdefinitions.FotosAlbumStepDefiniton
+com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
+ com.prueba.stepdefinitions.ListaUsuariosStepDefinition
 com/prueba/stepdefinitions/InvalidarUsuarioStepDefinition.java
  com.prueba.stepdefinitions.InvalidarUsuarioStepDefinition
 com/prueba/stepdefinitions/Hook.java
@@ -30,7 +30,7 @@ com/prueba/stepdefinitions/CompraAlbumStepDefinition.java
  com.prueba.stepdefinitions.CompraAlbumStepDefinition
 com/prueba/stepdefinitions/LoginStepDefinition.java
  com.prueba.stepdefinitions.LoginStepDefinition
-com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
- com.prueba.stepdefinitions.ListaUsuariosStepDefinition
+com/prueba/stepdefinitions/FotosAlbumStepDefiniton.java
+ com.prueba.stepdefinitions.FotosAlbumStepDefiniton
 com/prueba/stepdefinitions/ComunStepDefinition.java
  com.prueba.stepdefinitions.ComunStepDefinition

@@ -14,4 +14,9 @@ public class FotosAlbumStepDefiniton {
     public void seConsultanLaFotosDelAlmbum() {
         OnStage.theActorInTheSpotlight().attemptsTo(Fotos.album(Serenity.sessionVariableCalled(TOKEN),"1"));
     }
+
+    @Cuando("se consultan la fotos del almbum con id no existente")
+    public void seConsultanLaFotosDelAlmbumConIdNoExistente() {
+        OnStage.theActorInTheSpotlight().attemptsTo(Fotos.album(Serenity.sessionVariableCalled(TOKEN),"123890"));
+    }
 }

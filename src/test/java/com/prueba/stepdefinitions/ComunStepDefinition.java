@@ -54,4 +54,9 @@ public class ComunStepDefinition {
     public void elTokenNoSeaValiado() {
         Serenity.setSessionVariable(TOKEN).to("2341324323");
     }
+
+    @Entonces("el servicio debe retornar un codigo invalido")
+    public void elServicioDebeRetornarUnCodigoInvalido() {
+        OnStage.theActorInTheSpotlight().should(seeThatResponse(response -> response.statusCode(404)));
+    }
 }
