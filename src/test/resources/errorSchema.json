@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "errors": [
+        {
+          "code": "authentication_error",
+          "message": "Invalid token"
+        }
+      ],
+      "origin": "origen error",
+      "stack_trace": "sss",
+      "timestamp": "2021-04-04T22:28:05.120Z"
+    }
+  ],
+  "required": [
+    "errors",
+    "origin",
+    "stack_trace",
+    "timestamp"
+  ],
+  "properties": {
+    "errors": {
+      "$id": "#/properties/errors",
+      "type": "array",
+      "title": "The errors schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "code": "authentication_error",
+            "message": "Invalid token"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/errors/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/errors/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "code": "authentication_error",
+                "message": "Invalid token"
+              }
+            ],
+            "required": [
+              "code",
+              "message"
+            ],
+            "properties": {
+              "code": {
+                "$id": "#/properties/errors/items/anyOf/0/properties/code",
+                "type": "string",
+                "title": "The code schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "authentication_error"
+                ]
+              },
+              "message": {
+                "$id": "#/properties/errors/items/anyOf/0/properties/message",
+                "type": "string",
+                "title": "The message schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Invalid token"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "origin": {
+      "$id": "#/properties/origin",
+      "type": "string",
+      "title": "The origin schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "origen error"
+      ]
+    },
+    "stack_trace": {
+      "$id": "#/properties/stack_trace",
+      "type": "string",
+      "title": "The stack_trace schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "sss"
+      ]
+    },
+    "timestamp": {
+      "$id": "#/properties/timestamp",
+      "type": "string",
+      "title": "The timestamp schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2021-04-04T22:28:05.120Z"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

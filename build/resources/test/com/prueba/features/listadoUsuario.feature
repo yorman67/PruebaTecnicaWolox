@@ -30,7 +30,6 @@ Característica: Validar endpoint de listado de usuarios
        | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 | listadoUsuarioSchema.json |
        | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 | listadoUsuarioSchema.json |
 
-
   Esquema del escenario: validar response y paginacon  como <nombreEscenario>
     Dado que el Analista establece la url base
     Cuando se consulta la lista con las credenciales
@@ -41,4 +40,20 @@ Característica: Validar endpoint de listado de usuarios
       | nombreEscenario       | email                | password           |
       | usuario administrador | admin@wolox.com.ar   | candidatoWolox2020 |
       | usuario regular       | regular@wolox.com.ar | candidatoWolox2020 |
+
+  Escenario: Validar token incorrecto
+    Dado que el Analista establece la url base
+    Cuando se ingresa token invalido
+    Entonces se valida que la respuesta contenga el "Invalid token" y el 401
+
+  Escenario: Validar paginacion incorrecta
+    Dado que el Analista establece la url base
+    Cuando se ingresa pagina que no existe
+    Entonces se valida que la respuesta contenga el "page" y el 200
+
+  Escenario: valdiar squema de error
+    Dado que el Analista establece la url base
+    Cuando se ingresa token invalido
+    Entonces valido el esquema del response con el esquema "errorSchema.json"
+
 

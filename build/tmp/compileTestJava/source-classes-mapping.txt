@@ -20,8 +20,8 @@ com/prueba/runners/ConsultaCompraAlbumRunner.java
  com.prueba.runners.ConsultaCompraAlbumRunner
 com/prueba/runners/RegistroRunner.java
  com.prueba.runners.RegistroRunner
-com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
- com.prueba.stepdefinitions.ListaUsuariosStepDefinition
+com/prueba/stepdefinitions/AlbumesStepDefinition.java
+ com.prueba.stepdefinitions.AlbumesStepDefinition
 com/prueba/stepdefinitions/RegistroStepDefinition.java
  com.prueba.stepdefinitions.RegistroStepDefinition
 com/prueba/stepdefinitions/AlbumesCompradosStepDefinition.java
@@ -32,5 +32,5 @@ com/prueba/stepdefinitions/LoginStepDefinition.java
  com.prueba.stepdefinitions.LoginStepDefinition
 com/prueba/stepdefinitions/ComunStepDefinition.java
  com.prueba.stepdefinitions.ComunStepDefinition
-com/prueba/stepdefinitions/AlbumesStepDefinition.java
- com.prueba.stepdefinitions.AlbumesStepDefinition
+com/prueba/stepdefinitions/ListaUsuariosStepDefinition.java
+ com.prueba.stepdefinitions.ListaUsuariosStepDefinition

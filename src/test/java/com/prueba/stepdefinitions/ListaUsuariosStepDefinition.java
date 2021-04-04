@@ -27,9 +27,22 @@ public class ListaUsuariosStepDefinition {
         OnStage.theActorInTheSpotlight().attemptsTo(ListaUsuario.con(Serenity.sessionVariableCalled(TOKEN),1));
     }
 
+    @Cuando("se ingresa token invalido")
+    public void seIngresaTokenInvalido() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ListaUsuario.con("2346364575978",1));
+    }
+
+    @Cuando("se ingresa pagina que no existe")
+    public void seIngresaPaginaQueNoExiste() {
+        OnStage.theActorInTheSpotlight().attemptsTo(ListaUsuario.con(Serenity.sessionVariableCalled(TOKEN),3000));
+    }
+
     @Entonces("se valida que el response sea correcto")
     public void seValidaQueElResponseSeaCorrecto() {
         OnStage.theActorInTheSpotlight().should(seeThat("El servicio retorno los usurarios de manera incorrecta : "
                 + SerenityRest.lastResponse().body().asString(), ValdiarResponse.correcta()));
     }
+
+
+
 }
