@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Validar endpoint de listado de usuarios","consultar lista de usuarios como <nombreEscenario> correctmante","SUCCESS","2021-04-04T23:22:24.598-05:00[America/Bogota]","0.0","2.29"
+"Validar endpoint de listado de usuarios","validar el esquema de la respuesta del servicio","FAILURE","2021-04-04T23:22:26.886-05:00[America/Bogota]","0.0","2.05"
+"Validar endpoint de listado de usuarios","validar response y paginacon  como <nombreEscenario>","SUCCESS","2021-04-04T23:22:28.95-05:00[America/Bogota]","0.0","27.29"
+"Validar endpoint de listado de usuarios","Validar token incorrecto","SUCCESS","2021-04-04T23:22:56.246-05:00[America/Bogota]","0.0","0.44"
+"Validar endpoint de listado de usuarios","valdiar squema de error","FAILURE","2021-04-04T23:22:56.684-05:00[America/Bogota]","0.0","0.44"

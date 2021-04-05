@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Validar endpoint de compra de albumes","realizar compra de un album","SUCCESS","2021-04-04T23:23:12.392-05:00[America/Bogota]","0.0","2.25"
+"Validar endpoint de compra de albumes","realizar compra de un album que no existe","SUCCESS","2021-04-04T23:23:14.645-05:00[America/Bogota]","0.0","2.25"
+"Validar endpoint de compra de albumes","Validar token incorrecto","SUCCESS","2021-04-04T23:23:16.895-05:00[America/Bogota]","0.0","0.44"

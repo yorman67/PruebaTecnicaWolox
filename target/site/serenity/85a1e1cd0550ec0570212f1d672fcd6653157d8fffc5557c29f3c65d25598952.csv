@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Validar endpoint de albumes","consultar albumes correctmante con <nombreEscenario>","SUCCESS","2021-04-04T23:22:57.273-05:00[America/Bogota]","0.0","2.24"
+"Validar endpoint de albumes","validar el esquema con <nombreEscenario>","SUCCESS","2021-04-04T23:22:59.521-05:00[America/Bogota]","0.0","2.3"
+"Validar endpoint de albumes","valdiar response para <nombreEscenario>","SUCCESS","2021-04-04T23:23:01.825-05:00[America/Bogota]","0.0","2.26"
+"Validar endpoint de albumes","Validar token incorrecto","SUCCESS","2021-04-04T23:23:04.089-05:00[America/Bogota]","0.0","0.43"
+"Validar endpoint de albumes","valdiar squema de error","FAILURE","2021-04-04T23:23:04.521-05:00[America/Bogota]","0.0","0.44"

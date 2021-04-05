@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Validar endpoint del login","Consumir login como <nombreEscenario> correctmante","SUCCESS","2021-04-04T23:22:20.24-05:00[America/Bogota]","0.0","1.18"
+"Validar endpoint del login","Validar header response de <nombreEscenario>","SUCCESS","2021-04-04T23:22:21.435-05:00[America/Bogota]","0.0","1.19"
+"Validar endpoint del login","validar esquema response <nombreEscenario>","SUCCESS","2021-04-04T23:22:22.624-05:00[America/Bogota]","0.0","1.47"
+"Validar endpoint del login","usuario no existe","SUCCESS","2021-04-04T23:22:24.095-05:00[America/Bogota]","0.0","0.46"
