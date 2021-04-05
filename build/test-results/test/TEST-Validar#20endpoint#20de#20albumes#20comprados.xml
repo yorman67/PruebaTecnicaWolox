@@ -1,12 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Validar endpoint de albumes comprados" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-04T15:16:40" hostname="DESKTOP-I0C78UK" time="12.156">
+<testsuite name="Validar endpoint de albumes comprados" tests="8" skipped="0" failures="1" errors="0" timestamp="2021-04-05T03:55:45" hostname="DESKTOP-I0C78UK" time="11.491">
   <properties/>
-  <testcase name="consultar albumes comprados correctmante" classname="Validar endpoint de albumes comprados" time="4.911"/>
-  <testcase name="consultar albumes comprados correctmante" classname="Validar endpoint de albumes comprados" time="1.226"/>
-  <testcase name="validar el esquema con usuario administrador" classname="Validar endpoint de albumes comprados" time="1.872"/>
-  <testcase name="validar el esquema con usuario regular" classname="Validar endpoint de albumes comprados" time="1.267"/>
-  <testcase name="validar response" classname="Validar endpoint de albumes comprados" time="1.66"/>
-  <testcase name="validar response" classname="Validar endpoint de albumes comprados" time="1.22"/>
+  <testcase name="consultar albumes comprados correctmante" classname="Validar endpoint de albumes comprados" time="4.127"/>
+  <testcase name="consultar albumes comprados correctmante" classname="Validar endpoint de albumes comprados" time="1.192"/>
+  <testcase name="validar el esquema con usuario administrador" classname="Validar endpoint de albumes comprados" time="1.646"/>
+  <testcase name="validar el esquema con usuario regular" classname="Validar endpoint de albumes comprados" time="1.141"/>
+  <testcase name="validar response" classname="Validar endpoint de albumes comprados" time="1.257"/>
+  <testcase name="validar response" classname="Validar endpoint de albumes comprados" time="1.105"/>
+  <testcase name="Validar token incorrecto" classname="Validar endpoint de albumes comprados" time="0.476"/>
+  <testcase name="valdiar squema de error" classname="Validar endpoint de albumes comprados" time="0.547">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Response body doesn't match expectation.&#10;Expected: The content to match the given JSON schema.&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items/anyOf/0&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items/anyOf/0/properties/code&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items/anyOf/0/properties/message&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/origin&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/stack_trace&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;warning: the following keywords are unknown and will be ignored: [$id, examples]&#10;    level: &quot;warning&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/timestamp&quot;}&#10;    domain: &quot;syntax&quot;&#10;    ignored: [&quot;$id&quot;,&quot;examples&quot;]&#10;error: object has missing required properties ([&quot;origin&quot;,&quot;stack_trace&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;errors&quot;,&quot;origin&quot;,&quot;stack_trace&quot;,&quot;timestamp&quot;]&#10;    missing: [&quot;origin&quot;,&quot;stack_trace&quot;]&#10;&#10;  Actual: {&quot;errors&quot;:[{&quot;code&quot;:&quot;authentication_error&quot;,&quot;message&quot;:&quot;Invalid token&quot;}],&quot;timestamp&quot;:&quot;2021-04-05T03:55:55.873Z&quot;}&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items/anyOf/0&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items/anyOf/0/properties/code&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/errors/items/anyOf/0/properties/message&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/origin&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/stack_trace&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: &quot;warning&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;/properties/timestamp&quot;}
+    domain: &quot;syntax&quot;
+    ignored: [&quot;$id&quot;,&quot;examples&quot;]
+error: object has missing required properties ([&quot;origin&quot;,&quot;stack_trace&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;file:/D:/wolox/build/resources/test/errorSchema.json#&quot;,&quot;pointer&quot;:&quot;&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;errors&quot;,&quot;origin&quot;,&quot;stack_trace&quot;,&quot;timestamp&quot;]
+    missing: [&quot;origin&quot;,&quot;stack_trace&quot;]
+
+  Actual: {&quot;errors&quot;:[{&quot;code&quot;:&quot;authentication_error&quot;,&quot;message&quot;:&quot;Invalid token&quot;}],&quot;timestamp&quot;:&quot;2021-04-05T03:55:55.873Z&quot;}
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.prueba.stepdefinitions.ComunStepDefinition.validoElEsquemaDelResponseConElEsquemaEsquema(ComunStepDefinition.java:36)
+	at ✽.valido el esquema del response con el esquema &quot;errorSchema.json&quot;(file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature:58)
+</failure>
+  </testcase>
   <system-out><![CDATA[Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature
@@ -19,6 +87,8 @@ Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComp
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
 Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature
 Step argument class io.cucumber.core.gherkin.vintage.GherkinVintageDataTableArgument
+Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature
+Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO  - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
@@ -107,5 +177,45 @@ validar response
 
 validar response
 ----------------------------------------------------------------------------
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+Validar token incorrecto(validar-endpoint-de-albumes-comprados;validar-token-incorrecto)
+-------------------------------------------------------------------
+[Test worker] INFO  - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+Validar token incorrecto
+----------------------------------------------------------------------------
+[Test worker] INFO  - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+valdiar squema de error(validar-endpoint-de-albumes-comprados;valdiar-squema-de-error)
+-------------------------------------------------------------------
+[Test worker] ERROR  - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+valdiar squema de error
+--------------------------------------------------------------------------
+[Test worker] ERROR  -     Test failed at step: A valid response is returned
+[Test worker] ERROR  -     1 expectation failed.Response body doesn't match expectation.Expected: The content to match the given JSON schema.warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":""}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors"}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items"}    domain: "syntax"    ignored: ["$id"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items/anyOf/0"}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items/anyOf/0/properties/code"}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items/anyOf/0/properties/message"}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/origin"}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/stack_trace"}    domain: "syntax"    ignored: ["$id","examples"]warning: the following keywords are unknown and will be ignored: [$id, examples]    level: "warning"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/timestamp"}    domain: "syntax"    ignored: ["$id","examples"]error: object has missing required properties (["origin","stack_trace"])    level: "error"    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":""}    instance: {"pointer":""}    domain: "validation"    keyword: "required"    required: ["errors","origin","stack_trace","timestamp"]    missing: ["origin","stack_trace"]  Actual: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2021-04-05T03:55:55.873Z"}
 ]]></system-err>
 </testsuite>

@@ -1,13 +1,7 @@
 com/prueba/task/ConsultaCompra.java
  com.prueba.task.ConsultaCompra
-com/prueba/task/Logueo.java
- com.prueba.task.Logueo
-com/prueba/task/ListaUsuario.java
- com.prueba.task.ListaUsuario
-com/prueba/task/Registra.java
- com.prueba.task.Registra
-com/prueba/task/Consultar.java
- com.prueba.task.Consultar
+com/prueba/util/Ayuda.java
+ com.prueba.util.Ayuda
 com/prueba/util/VariablesSesion.java
  com.prueba.util.VariablesSesion
 com/prueba/task/Comprar.java
@@ -18,9 +12,15 @@ com/prueba/task/Fotos.java
  com.prueba.task.Fotos
 com/prueba/task/ListadoAlbumes.java
  com.prueba.task.ListadoAlbumes
-com/prueba/util/Ayuda.java
- com.prueba.util.Ayuda
 com/prueba/questions/ValdiarResponse.java
  com.prueba.questions.ValdiarResponse
+com/prueba/task/Registra.java
+ com.prueba.task.Registra
+com/prueba/task/Consultar.java
+ com.prueba.task.Consultar
 com/prueba/questions/ValidarLista.java
  com.prueba.questions.ValidarLista
+com/prueba/task/Logueo.java
+ com.prueba.task.Logueo
+com/prueba/task/ListaUsuario.java
+ com.prueba.task.ListaUsuario

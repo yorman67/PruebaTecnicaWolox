@@ -3,9 +3,78 @@
   <properties/>
   <system-out><![CDATA[Feature from file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature
 
-6 Scenarios (?[32m6 passed?[0m)
-24 Steps (?[32m24 passed?[0m)
-0m12.344s
+?[31mFailed scenarios:?[0m
+?[31mfile:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature:54?[0m# valdiar squema de error
+
+8 Scenarios (?[31m1 failed?[0m, ?[32m7 passed?[0m)
+32 Steps (?[31m1 failed?[0m, ?[32m31 passed?[0m)
+0m11.701s
+
+
+java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":""}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items"}
+    domain: "syntax"
+    ignored: ["$id"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items/anyOf/0"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items/anyOf/0/properties/code"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/errors/items/anyOf/0/properties/message"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/origin"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/stack_trace"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+warning: the following keywords are unknown and will be ignored: [$id, examples]
+    level: "warning"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":"/properties/timestamp"}
+    domain: "syntax"
+    ignored: ["$id","examples"]
+error: object has missing required properties (["origin","stack_trace"])
+    level: "error"
+    schema: {"loadingURI":"file:/D:/wolox/build/resources/test/errorSchema.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["errors","origin","stack_trace","timestamp"]
+    missing: ["origin","stack_trace"]
+
+  Actual: {"errors":[{"code":"authentication_error","message":"Invalid token"}],"timestamp":"2021-04-05T03:55:55.873Z"}
+
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at com.prueba.stepdefinitions.ComunStepDefinition.validoElEsquemaDelResponseConElEsquemaEsquema(ComunStepDefinition.java:36)
+	at ?.valido el esquema del response con el esquema "errorSchema.json"(file:///D:/wolox/src/test/resources/com/prueba/features/albumesComprados.feature:58)
 
 
 ]]></system-out>

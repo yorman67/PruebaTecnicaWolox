@@ -48,8 +48,55 @@ dependencies {
 }
 
 test {
-    systemProperties System.getProperties()
-    systemProperty "file.encoding", "UTF-8"
-    testLogging.showStandardStreams = true
-    finalizedBy(aggregate)
+    String prueba = System.properties['Prueba']
+    println "El feature que se ejecutara es : " + prueba
+    systemProperty "Prueba",prueba
+
+    switch (prueba){
+        case "Registro":
+            useJUnit()
+            include ('**/RegistroRunner*')
+            finalizedBy(aggregate)
+            break
+        case "Login":
+            useJUnit()
+            include ('**/LoginRunner*')
+            finalizedBy(aggregate)
+            break
+        case "ListaUsuarios":
+            useJUnit()
+            include ('**/ListaUsuarioRunner*')
+            finalizedBy(aggregate)
+            break
+        case "ListaAlbumes":
+            useJUnit()
+            include ('**/AlbumesRunner*')
+            finalizedBy(aggregate)
+            break
+        case "FotosAlbum":
+            useJUnit()
+            include ('**/FotosAlbumesRunner*')
+            finalizedBy(aggregate)
+            break
+        case "AlbumesComprados":
+            useJUnit()
+            include ('**/AlbumesCompradosRunner*')
+            finalizedBy(aggregate)
+            break
+        case "ComprarAlbum":
+            useJUnit()
+            include ('**/ConsultaCompraAlbumRunner*')
+            finalizedBy(aggregate)
+            break
+        case "InvalidaSesion":
+            useJUnit()
+            include ('**/InvalidarUsuarioRunner*')
+            finalizedBy(aggregate)
+            break
+        case "Integral":
+            useJUnit()
+            include ('**/IntegralRunner*')
+            finalizedBy(aggregate)
+            break
+    }
 }
