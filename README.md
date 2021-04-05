@@ -54,6 +54,10 @@ Como pre-requisitos deberas tener intalados las siguientes herramientas:
       9. Integral
       
  ### Evidencia
+ Esta es una imagen del reporte que se encuentra en la carpeta target, como se puede observar algunos escenarios fallaron, ya que segun los criterios de aceptación deberia hacer algo, y el servicio hace algo ditinto
+ 
+ ![image](https://user-images.githubusercontent.com/79065617/113537660-f1db8900-959e-11eb-8c8e-a213817c7c57.png)
+
   
       
  ### Construido con 
