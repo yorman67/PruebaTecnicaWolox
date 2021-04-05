@@ -9,12 +9,15 @@ import net.serenitybdd.screenplay.actors.OnStage;
 
 
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import static com.prueba.util.VariablesSesion.*;
 
 public class Ayuda {
 
     private final Faker fake = Faker.instance(new Locale("es"), new Random());
+    private Logger LOGGERWOLOX = Logger.getLogger("Prueba tecnica");
 
     public  Map <String,Object> datosNuevoUsuario(){
         Map<String, Object> mapInfoRegister = new HashMap<String, Object>();
@@ -96,11 +99,11 @@ public class Ayuda {
 
     public boolean albumComprado(){
         if(SerenityRest.lastResponse().statusCode()==201){
-            System.out.println("Se compro el album");
+            LOGGERWOLOX.log(Level.INFO,"Se compro el album");
             return true;
         }else {
             if(SerenityRest.lastResponse().statusCode()==422){
-                System.out.println("Este usuario ya compro este album");
+                LOGGERWOLOX.log(Level.INFO,"Este usuario ya compro este album");
                 return true;
             }else{
                 return false;
